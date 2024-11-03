@@ -1,0 +1,107 @@
+@import "/src/variables.scss";
+
+.card {
+    position: relative;
+    height: 189px;
+    border-radius: $border_radius10;
+    overflow: hidden !important;
+
+    .card_img {
+        height: 189px;
+        overflow: hidden !important;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .card_info {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        right: 0;
+        height: 100% !important;
+        max-height: 55px;
+        background-color: #23252A33;
+        backdrop-filter: blur(60px);
+        left: 0;
+        padding: 6px;
+        border-bottom-left-radius:  $border_radius10;
+        border-bottom-right-radius:  $border_radius10;
+        
+
+        h3 {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            color: #EFEFEF;
+        }
+
+        span {
+            font-size: 12px;
+            line-height: 22px;
+            letter-spacing: -1%;
+            font-weight: 500;
+            color: #EFEFEF;
+        }
+
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(60px);
+        background: #23252A33;
+        display: flex;
+        align-items: flex-end;
+        transition: all linear .4s;
+        transform: translateY(100%);
+        opacity: 0;
+        border-radius: $border_radius10;
+
+
+        >div {
+            height: 60%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 10px;
+
+            >button {
+                width: 87px;
+                height: 32px;
+                background: #32ADE6;
+                border-radius: 6px;
+                font-size: 13px;
+                line-height: 22px;
+                letter-spacing: -1%;
+                color: #EFEFEF;
+                border: none;
+                font-weight: 500;
+            }
+
+            >p {
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                color: #EFEFEF;
+                font-weight: 500;
+
+            }
+        }
+    }
+
+    &:hover .overlay {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+
+}

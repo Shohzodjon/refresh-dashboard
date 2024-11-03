@@ -1,0 +1,208 @@
+@import "/src/variables.scss";
+
+.flex_container {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+
+    .left_side {
+        width: 100%;
+        max-width: 1293px;
+
+        .wrapper {
+            border: 1px solid $dark-blue;
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            min-height: 862px;
+            max-height: 864px;
+            overflow-x: auto;
+            background-color: $black-700;
+
+            >div {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 10px;
+                max-height: 864px;
+            }
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            scrollbar-width: none;
+
+        }
+
+
+    }
+
+    .right_side {
+        width: 100%;
+        max-width: 316px;
+        padding: 15px;
+        border: 1px solid $dark-blue;
+        border-radius: 8px;
+        background-color: $black-700;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #88878C;
+            font-size: 10px;
+            line-height: 11px;
+            letter-spacing: 0.2px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .right_side_flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        h3 {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #E2E2E2;
+        }
+
+        span {
+            font-size: 10px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #999B9E;
+        }
+    }
+
+    .order_form {
+        label {
+            font-size: 12px;
+            margin-bottom: 5px;
+            line-height: 20px;
+            color: #E2E2E2;
+        }
+
+    }
+
+    .promo_code {
+        border: 1px solid #23252A;
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 4px;
+
+        input {
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            color: #fff;
+            font-size: 13px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+
+        button {
+            background: #E2E2E2;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #141718;
+        }
+    }
+
+    .shop_sum {
+        border: 0.5px solid #2A2C33;
+        border-radius: 6px;
+        padding: 10px 0;
+        margin-top: 10px;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+
+            h3 {
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                font-weight: 500;
+                color: #EFEFEF;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: -1%;
+                font-weight: 500;
+                color: #EFEFEF;
+            }
+        }
+
+        ul {
+            margin-top: 5px;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 10px;
+
+                &:nth-child(1) {
+                    border-top: 1px solid #23252A;
+                    padding-top: 5px;
+                }
+
+                p {
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #EFEFEF;
+
+                    span {
+                        font-size: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .line{
+        display: block;
+        width: 98%;
+        height: 1px;
+        background: #23252A;
+        margin: 15px auto;
+    }
+    .btn_payment{
+        background: #E2E2E2;
+        border-radius: 6px;
+        padding: 4px 16px;
+        border: none;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        width: 100%;
+    }
+
+}

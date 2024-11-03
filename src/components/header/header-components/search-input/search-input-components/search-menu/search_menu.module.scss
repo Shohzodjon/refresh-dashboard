@@ -1,0 +1,46 @@
+@import "/src/variables.scss";
+
+.ul {
+  background-color: $primary-color;
+  border: $border_style;
+  border-radius: $border_radius12;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  > li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: $border_radius12;
+    padding: 1rem;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .hover_submenu {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: -180px;
+      > ul {
+        background-color: $primary_color;
+        border: $border_style;
+        border-radius: $border_radius5;
+        > li {
+          cursor: pointer;
+          padding: 1rem;
+          &:hover {
+            background-color: $tertiary_color;
+          }
+        }
+      }
+    }
+    &:hover {
+      background: $hover-lists-active;
+      .hover_submenu {
+        display: block;
+      }
+    }
+  }
+}

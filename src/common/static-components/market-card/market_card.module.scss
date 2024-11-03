@@ -1,0 +1,67 @@
+@import "/src/variables.scss";
+
+.market_card {
+    border-radius: 8px;
+    border: 1px solid;
+    background: #23252A;
+    box-shadow: 0px 2px 4px 0px #0000001A;
+    border: 0.5px solid #23252A;
+    padding: 10px;
+    margin-top: 10px;
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        h3 {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 500;
+            color: #E2E2E2;
+
+        }
+
+        span {
+            font-size: 12px;
+            line-height: 22px;
+            letter-spacing: -1%;
+            color: #E2E2E2;
+        }
+    }
+
+    .btn_group {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        button {
+            background: #17181A;
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid #23252A;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: #17181A;
+            border-radius: 4px;
+
+            button {
+                background: none;
+                border: none;
+                padding: 4px 8px;
+            }
+
+            span {
+                font-size: 11px;
+                line-height: 16.5px;
+                color: #E2E2E2;
+                font-weight: 400;
+            }
+        }
+    }
+}

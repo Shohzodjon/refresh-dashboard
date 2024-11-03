@@ -1,0 +1,130 @@
+//ЦВЕТА ПЕРВОГО МАКЕТА ИЛИ ПРОСТО СТАРЫЕ
+$bg-primary: #0a0c0c;
+$primary-color: #141718;
+$secondary-color: #232627;
+$tertiary-color: #343839;
+$quartet-color: #2f3233;
+$fifth-color: #141414;
+
+$light-color: #ffffff;
+$dark-color: #6c7275;
+$faded-color: #a2a5ae;
+
+$active-color: #3e90f0;
+$warning-color: #ff6a55;
+$error-color: #ff0000;
+$close-color: #e6543f;
+$ok-color: #159900;
+
+//ЦВЕТА НОВГО МАКЕТА ИЛИ ПРОСТО НОВЫЕ
+
+$primary_color: #0a0c0c;
+$secondary_color: #1b1f20;
+$tertiary_color: #161818;
+$quartet_color: #343839;
+
+$light_color: #ffffff;
+$dark_color: #6c7275;
+$faded_color: #a2a5ae;
+
+$custom_blue: #3e90f0;
+$custom_red: #e6543f;
+$ok-color: #159900;
+// new colors
+$dark-blue:#23252a;
+$black-700:#141518;
+//стили для границ
+$border_style: 1px solid $tertiary-color;
+$border_radius5: 5px;
+$border_radius10: 10px;
+$border_radius12: 12px;
+$border_radius16: 16px;
+
+
+
+$hover-lists-active: linear-gradient(
+  to right,
+  rgba(42, 133, 255, 0.1),
+  rgba(255, 255, 255, 0.1)
+);
+
+//стили для мини кнопок с синей иконкой
+@mixin divStyle($bg-color, $hover-color) {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color;
+  border: none;
+  border-radius: $border_radius12;
+  &:hover {
+    background-color: $hover-color;
+    border: 1px solid $active-color;
+  }
+}
+
+//СТИЛИ ДЛЯ МОДАЛЬНЫХ ОКОН TYPE1
+@mixin modalType1Style {
+  width: 23.75rem;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary_color;
+  border: $border_style;
+  border-radius: $border_radius10;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+//СТИЛИ ДЛЯ МОДАЛЬНЫХ ОКОН VERSI1
+@mixin modalDivV1($cutom-width) {
+  width: $cutom-width;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: $bg-primary;
+  border: $border_style;
+  border-radius: $border_radius16;
+  padding: 1rem;
+}
+
+//стили для кастамных input and textarea элементов
+@mixin inputStyle {
+  width: 100%;
+  background-color: $primary-color;
+  border: $border_style;
+  border-radius: $border_radius12;
+  color: $light-color;
+  padding: 1rem;
+}
+
+@mixin twoButtonDivHorizont {
+  display: flex;
+  justify-content: space-between;
+  > button:first-child {
+    margin-right: 0.5rem;
+  }
+  > button:last-child {
+    margin-left: 0.5rem;
+  }
+}
+
+@mixin formsPageDiv {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin forms {
+  width: 26rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: $bg-primary;
+  border: $border_style;
+  border-radius: $border_radius16;
+  padding: 1rem;
+}

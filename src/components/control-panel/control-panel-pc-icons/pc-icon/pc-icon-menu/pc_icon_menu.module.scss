@@ -1,0 +1,72 @@
+@import "/src/variables.scss";
+
+.div {
+  width: 14.8rem;
+  background-color: $primary_color;
+  border: $border_style;
+  border-radius: 10px;
+  z-index: 1;
+  .subdiv {
+    > .drop_menu {
+      background-color: $active-color;
+      border-radius: 10px 10px 0 0;
+      padding: 1rem;
+      > div {
+        width: 100%;
+        > div {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          > div {
+            > p:first-child {
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+        > ul {
+          width: 14.8rem;
+          background-color: $primary_color;
+          color: $light_color;
+          border: $border_style;
+          padding: 1rem;
+          li {
+            padding: 0.3rem;
+            &:hover {
+              background-color: $tertiary_color;
+            }
+          }
+        }
+      }
+    }
+    > ul {
+      padding: 0.3rem;
+      //Стили для пустышек
+      > li {
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+      }
+      // ниже стили для того что уже обёрнуто кнопкой
+      > li {
+        padding: 0.5rem;
+        &:hover {
+          background: $hover-lists-active;
+          border-radius: $border_radius5;
+        }
+        > div > span {
+          display: flex;
+          align-items: center;
+          > img {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+      ._disable {
+        opacity: 0.5;
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+  }
+}

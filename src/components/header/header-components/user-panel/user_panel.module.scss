@@ -1,0 +1,116 @@
+@import "/src//variables.scss";
+
+.div {
+  .dropbutton {
+    width: 243px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: $light-color;
+    .avatar {
+      background-color: $primary-color;
+      border: 1px solid $secondary-color;
+      border-radius: 100%;
+      margin-right: 0.5rem;
+      padding: 0.4rem;
+      > h1 {
+        font-size: 18px;
+      }
+    }
+    > div {
+      text-align: start;
+      > h3 {
+        margin: 0 0.5rem 0.3rem 0;
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        color: $dark-color;
+        > img {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  .dropdown_list {
+    width: 21rem;
+    background-color: $bg-primary;
+    color: $dark-color;
+    border: 1px solid $primary-color;
+    padding: 1rem;
+    .dropdown_list_header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $dark-color;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      > div {
+        display: flex;
+        align-items: center;
+        > img {
+          margin-right: 0.5rem;
+        }
+      }
+      > button {
+        color: $light-color;
+        border: none;
+        padding: 0.75rem 1.25rem;
+        border-radius: $border_radius10;
+      }
+      ._active_shift {
+        background-color: $close-color;
+      }
+      ._disactive_shift {
+        background-color: $active-color;
+      }
+    }
+    .dropdown_list_shift_data {
+      > p {
+        margin-bottom: 0.5rem;
+      }
+      > ul {
+        > li {
+          border-left: 1px solid white;
+          padding: 0.5rem;
+          margin-bottom: 0.3rem;
+        }
+        > li:nth-child(2) {
+          border-left-color: $ok-color;
+        }
+        > li:nth-child(3) {
+          border-left-color: $active-color;
+        }
+        > li:nth-child(4) {
+          border-left-color: $warning-color;
+        }
+      }
+      > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > button {
+          color: $light-color;
+          background-color: $primary-color;
+          border: none;
+          border-radius: $border_radius10;
+          padding: 0.75rem 1.25rem;
+        }
+      }
+    }
+    .dropdown_list_options {
+      > li {
+        > a {
+          display: flex;
+          align-items: center;
+          color: $dark-color;
+          padding: 1rem;
+          > img {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

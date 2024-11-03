@@ -1,0 +1,19 @@
+@import "/src/variables.scss";
+.div {
+  .subdiv {
+    margin-bottom: 1rem;
+    > div:first-child {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      > p:first-child {
+        color: $active-color;
+      }
+    }
+    > div:last-child {
+      border-radius: $border_radius10;
+      border: $border_style;
+      padding: 1rem;
+    }
+  }
+}

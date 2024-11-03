@@ -1,0 +1,20 @@
+@import "/src/variables.scss";
+
+.div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: $border_style;
+  padding-bottom: 1rem;
+  > h3 {
+    > span {
+      text-transform: uppercase;
+      color: #3e90f0;
+    }
+  }
+  > div {
+    @include divStyle($primary-color, $tertiary-color);
+    background-color: transparent;
+  }
+}
